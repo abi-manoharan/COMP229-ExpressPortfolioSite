@@ -1,0 +1,33 @@
+<!-- site header -->
+<div class="container-fluid bg-dark text-white" style="--bs-bg-opacity: .5; padding: 40px">
+    <div class="row justify-content-center" style="padding: 0px;">
+        <div class="col-sm-1">
+            <div class="jumbotron">
+            <h1 class="display-2">Home.</h1>
+            </div>
+        </div>
+    </div>
+</div>
+ <nav class="navbar sticky-top navbar-expand-lg  bg-light navbar-dark" style="--bs-bg-opacity: .15;">
+    <div class="container-fluid">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="">
+            <li class="nav-item">
+            <a <%if(page==='Home'){%>class="nav-link disabled"<%}%>class="nav-link active" aria-current="page" href = "#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a <%if(page==='About'){%>class="nav-link disabled"<%}%>class="nav-link active" aria-current="page" href = "#">About Me</a>
+            </li>
+            <li class="nav-item">
+            <li class="nav-item">
+            <a <%if(page==='Services'){%>class="nav-link disabled"<%}%>class="nav-link active" aria-current="page" href = "#">Services</a>
+            </li>
+            <li class="nav-item">
+            <a <%if(page==='Projects'){%>class="nav-link disabled"<%}%>class="nav-link active" aria-current="page" href = "#">Projects</a>
+            </li>
+            <li class="nav-item">
+            <a <%if(page==='Contact'){%>class="nav-link disabled"<%}%>class="nav-link active" aria-current="page" href = "#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
