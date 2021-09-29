@@ -24,7 +24,7 @@ router.get('/Projects', function(req, res, next) {
 });
 
 router.get('/Contact', function(req, res, next) {
-  res.render('index', {  page: 'Contact'});
+  res.render('contact', {  page: 'Contact'});
 });
 
 

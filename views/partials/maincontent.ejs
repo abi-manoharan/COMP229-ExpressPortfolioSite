@@ -24,7 +24,7 @@
                             <p><strong>Place of residence:</strong> Toronto, Canada</p>
                         </li>
                         <li>
-                            <p>lol</p>
+                            <p>My <a href="Assets/documents/Resume.pdf">RESUME</a></p>
                         </li>
                     </ul>
                 </div>
@@ -34,13 +34,104 @@
 <%}%>
 
 <%if(page === 'Projects'){ %>
-
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-sm-6" style=" height: max-content; padding:20px;">
+                <a href="http://studentweb.cencol.ca/amanoh15/ClientsideWebDev/Assignment6Site/Assignment6.html"><img style="width: 600px;" src="Assets/images/project-2.png" alt="project image"></a>
+            </div>
+            <div class="col-sm-6" style=" height: max-content; padding:20px;">
+                <a href="http://studentweb.cencol.ca/amanoh15/WebInterfaceDesign/Term%20Project/Propery1/Property1.html"><img style="width: 600px;" src="Assets/images/project-1.png" alt="project image"></a>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-sm-6" style="height: max-content; padding:20px; ">
+                <a href="http://studentweb.cencol.ca/amanoh15/ClientsideWebDev/Assignment5Site/Assignment5.html"><img style="width: 600px;"  src="Assets/images/project-3.png" alt="project image"></a>
+            </div>
+            <div class="col-sm-6" style=" height: max-content; padding:20px;">
+                <!--<img style="max-width: -webkit-fill-available;" src="Assets/images/project-1.png" alt="profile image">-->
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
 <%}%>
 
 <%if(page === 'Services'){ %>
-
+    <div class="container-fluid">
+        <div class="row align-items-end" style="height:200px">
+            <div class="col-sm-2"><img style="width: 200px;" src="Assets/images/CSS.png"  alt="CSS logo"></div>
+            <div class="col-sm-2"><img style="width: 200px;" src="Assets/images/HTML.png" alt="CSS logo"></div>
+            <div class="col-sm-2"><img style="width: 200px;" src="Assets/images/CSHARP.png" alt="CSS logo"></div>
+            <div class="col-sm-2"><img style="width: 200px;" src="Assets/images/JAVA.png" alt="CSS logo"></div>
+            <div class="col-sm-2"><img style="width: 200px" src="Assets/images/JS.png" alt="CSS logo"></div>
+            <div class="col-sm-2"><img style="width: 200px" src="Assets/images/SQL.png" alt="CSS logo"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="height:200px">
+            <div class="col-sm-2" style="text-align: center; color: honeydew;">CSS</div>
+            <div class="col-sm-2" style="text-align: center; color: honeydew;">HTML</div>
+            <div class="col-sm-2" style="text-align: center; color: honeydew;">CSHARP</div>
+            <div class="col-sm-2" style="text-align: center; color: honeydew;">JAVA</div>
+            <div class="col-sm-2" style="text-align: center; color: honeydew;">JS</div>
+            <div class="col-sm-2" style="text-align: center; color: honeydew;">SQL</div>
+        </div>
+    </div>
 <%}%>
 
 <%if(page === 'Contact'){ %>
-
+    <div style="padding: 20px;"></div> 
+    <div class="container" style="padding-top:20px;padding-bottom:20px; width: 70%; background-color:rgba(0, 0, 0, 0.75);">
+        <div class="row justify-content-center">
+            <div class="col-sm-8" style="text-align: center; color: white; line-height: 0.2;">
+                <p><strong><u>Contact Me</u></strong></p>
+                <p><strong>Email:</strong> abi.manoharan97@gmail.com</p>
+                <p><strong>Phone Number:</strong> 647-761-6463</p>
+            </div>
+        </div>
+    </div>
+   <div class="container" style="padding-top:20px;padding-bottom:20px; width: 70%; background-color:rgba(255, 255, 255, 0.75);">
+        <form action="">
+            <div class="row justify-content-center align-items-center">
+                <div class = "col-sm-4">
+                    <div class="form-group">
+                        <label for="inputFname">First Name</label>
+                        <input type="text" class="form-control" id="inputFname" placeholder="eg. John">
+                      </div>
+                </div>
+                <div class = "col-sm-4">
+                    <div class="form-group">
+                        <label for="inputLname">Last Name</label>
+                        <input type="text" class="form-control" id="inputLname" placeholder="eg. Smith">
+                      </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center" style=" padding-top: 10px;">
+                <div class = "col-sm-8">
+                    <div class="form-group">
+                        <label for="inputEAddress">Email</label>
+                        <input type="text" class="form-control" id="inputEAddress" placeholder="eg. JohnSmith@email.com">
+                      </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center" style=" padding-top: 10px;">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="inputMessage">Message</label>
+                        <textarea class="form-control" id="inputMessage" rows="8"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-end align-items-center" style=" padding-top: 10px;">
+                <div class="col-sm-4">
+                    <button type="button" onclick="location.href='home'"i id="submitbtn" class="btn btn-primary">Send</button>
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                    <button type="button" onclick="location.href='home'"id="cancelbtn" class="btn btn-primary">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
 <%}%> 
