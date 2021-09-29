@@ -2,3 +2,9 @@ body {
     background-image: url("/Assets/images/mainbg.jpg");
     background-size:cover;
 }
+
+.my-home-content1 {
+    height:240px;
+    color: white;
+    text-align: center;
+}
