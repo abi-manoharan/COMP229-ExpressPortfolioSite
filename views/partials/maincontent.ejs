@@ -1,3 +1,13 @@
+<!-- 
+    maincontent.ejs
+    
+    Abishekh Manoharan
+    301165253
+    Sept-29-2021
+
+ -->
+ 
+<!--main content for the homepage-->
 <%if(page === 'Home'){ %>
     <div class="container-fluid"> 
         <div class="row my-home-content1 justify-content-center align-items-end">
@@ -10,6 +20,7 @@
     </div>
 <%}%>
 
+<!--main content for the about me page-->
 <%if(page === 'About Me'){ %>
     <div class="container-fluid" style="padding-top: 40px;">
         <div class = "row justify-content-center align-items-center">
@@ -33,6 +44,7 @@
     </div>
 <%}%>
 
+<!--main content for the project page-->
 <%if(page === 'Projects'){ %>
     <div class="container-fluid">
         <div class="row align-items-center">
@@ -57,6 +69,8 @@
     <br>
 <%}%>
 
+
+<!--main content for the Services page-->
 <%if(page === 'Services'){ %>
     <div class="container-fluid">
         <div class="row align-items-end" style="height:200px">
@@ -80,8 +94,10 @@
     </div>
 <%}%>
 
+<!--main content for the contact me page-->
 <%if(page === 'Contact'){ %>
     <div style="padding: 20px;"></div> 
+    <!--container for personal contact information-->
     <div class="container" style="padding-top:20px;padding-bottom:20px; width: 70%; background-color:rgba(0, 0, 0, 0.75);">
         <div class="row justify-content-center">
             <div class="col-sm-8" style="text-align: center; color: white; line-height: 0.2;">
@@ -91,6 +107,8 @@
             </div>
         </div>
     </div>
+
+    <!--container for form components-->
    <div class="container" style="padding-top:20px;padding-bottom:20px; width: 70%; background-color:rgba(255, 255, 255, 0.75);">
         <form action="">
             <div class="row justify-content-center align-items-center">
@@ -125,6 +143,7 @@
             </div>
             <div class="row justify-content-end align-items-center" style=" padding-top: 10px;">
                 <div class="col-sm-4">
+                    <!--submit and cancel buttons refer back to the home page. Note that the submit button only temporarily holds the button type.-->
                     <button type="button" onclick="location.href='home'"i id="submitbtn" class="btn btn-primary">Send</button>
                     <button type="reset" class="btn btn-primary">Reset</button>
                     <button type="button" onclick="location.href='home'"id="cancelbtn" class="btn btn-primary">Cancel</button>
