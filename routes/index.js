@@ -21,7 +21,7 @@ router.get('/Services', function(req, res, next) {
 
 /* GET projects page. */
 router.get('/Projects', function(req, res, next) {
-  res.render('index', {  page: 'Independent Projects'});
+  res.render('index', {  page: 'Projects'});
 });
 
 /* GET contact page. */
