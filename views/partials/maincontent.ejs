@@ -6,7 +6,7 @@
     Sept-29-2021
 
  -->
- 
+
 <!--main content for the homepage-->
 <%if(page === 'Home'){ %>
     <div class="container-fluid"> 
@@ -41,6 +41,7 @@
                             <p>Hello everyone. Thank you for visting my portfolio. <br><br>I like to think of myself as a curious, creative, and passionate individual. My hobbies include reading, art, and music.<br> While I am new to the field of web development, I am always amazed at the seemingly infinite possibilities  <br>  available to developers and customers alike.I hope to bring the same feelings to my clients and to <br> develop the skillsets necessary to bring their dreams to fruition.</p>
                         </li>
                         <li>
+                        <!--Provides a download link to resume-->
                             <p>Please feel free to download and view my <a href="Assets/documents/Resume.pdf">resume</a></p>
                         </li>
                     </ul>
@@ -49,32 +50,6 @@
         </div>
     </div>
 <%}%>
-
-<!--main content for the project page-->
-<%if(page === 'Projects'){ %>
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-sm-6" style=" height: max-content; padding:20px;">
-                <a href="http://studentweb.cencol.ca/amanoh15/ClientsideWebDev/Assignment6Site/Assignment6.html"><img style="width: 600px;" src="Assets/images/project-2.png" alt="project image"></a>
-            </div>
-            <div class="col-sm-6" style=" height: max-content; padding:20px;">
-                <a href="http://studentweb.cencol.ca/amanoh15/WebInterfaceDesign/Term%20Project/Propery1/Property1.html"><img style="width: 600px;" src="Assets/images/project-1.png" alt="project image"></a>
-            </div>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-sm-6" style="height: max-content; padding:20px; ">
-                <a href="http://studentweb.cencol.ca/amanoh15/ClientsideWebDev/Assignment5Site/Assignment5.html"><img style="width: 600px;"  src="Assets/images/project-3.png" alt="project image"></a>
-            </div>
-            <div class="col-sm-6" style=" height: max-content; padding:20px;">
-                <!--<img style="max-width: -webkit-fill-available;" src="Assets/images/project-1.png" alt="profile image">-->
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-<%}%>
-
 
 <!--main content for the Services page-->
 <%if(page === 'Services'){ %>
@@ -98,6 +73,32 @@
             <div class="col-sm-2" style="text-align: center; color: honeydew;">SQL</div>
         </div>
     </div>
+<%}%>
+
+<!--main content for the project page-->
+<%if(page === 'Projects'){ %>
+    <div class="container-fluid">
+    <!-- creating linked images to projects-->
+        <div class="row align-items-center">
+            <div class="col-sm-6" style=" height: max-content; padding:20px;">
+                <a href="http://studentweb.cencol.ca/amanoh15/ClientsideWebDev/Assignment6Site/Assignment6.html"><img style="width: 600px;" src="Assets/images/project-2.png" alt="project image"></a>
+            </div>
+            <div class="col-sm-6" style=" height: max-content; padding:20px;">
+                <a href="http://studentweb.cencol.ca/amanoh15/WebInterfaceDesign/Term%20Project/Propery1/Property1.html"><img style="width: 600px;" src="Assets/images/project-1.png" alt="project image"></a>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-sm-6" style="height: max-content; padding:20px; ">
+                <a href="http://studentweb.cencol.ca/amanoh15/ClientsideWebDev/Assignment5Site/Assignment5.html"><img style="width: 600px;"  src="Assets/images/project-3.png" alt="project image"></a>
+            </div>
+            <div class="col-sm-6" style=" height: max-content; padding:20px;">
+                <!--<img style="max-width: -webkit-fill-available;" src="Assets/images/project-1.png" alt="profile image">-->
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
 <%}%>
 
 <!--main content for the contact me page-->

@@ -1,3 +1,13 @@
+<!-- header partial-->
+<%- include partials/header.ejs %>
+<!-- nav bar an jumbatron patial-->
+<%- include partials/SiteHeader.ejs %>
+<div style="color: white;">
 <h1><%= message %></h1>
 <h2><%= error.status %></h2>
 <pre><%= error.stack %></pre>
+</div>
+<!-- bottom navbar partial -->
+<%- include partials/indexbottom_nav.ejs %>
+<!-- footer partial-->  
+<%- include partials/footer.ejs %>
