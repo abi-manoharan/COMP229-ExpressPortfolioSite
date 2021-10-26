@@ -1,0 +1,64 @@
+<!-- header partial-->
+<%- include ../partials/header.ejs %>
+<!-- nav bar an jumbatron patial-->
+<%- include ../partials/SiteHeader.ejs %>
+
+<!-- Content for the Add page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= page %></h1>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="nameTextField">Name:</label>
+                    <input type="text" class="form-control"
+                    id="nameTextField"
+                    placeholder="Enter the Book Title"
+                    name="name" 
+                    value="<%= contact.name %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pnumberTextField">Phone Number: </label>
+                    <input type="text" class="form-control"
+                    id="pnumberTextField"
+                    placeholder="Enter the phone number"
+                    name="pnumber" 
+                    value="<%= contact.pnumber %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="emailTextField">Email: </label>
+                    <input type="text" class="form-control"
+                    id="emailTextField"
+                    placeholder="Enter the email"
+                    name="email" 
+                    value="<%= contact.email %>"
+                    required>
+                </div>
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit
+                </button>
+                
+                <a href="/contacts" class="btn btn-warning">
+                    <i class="fas fa-undo"></i> Cancel
+                </a>
+                
+                <td class="text-center col-1">
+                    <a href="/contacts/delete/<%=contactID%>" class="btn btn-danger btn-sm">
+                    <i class="fas fa-trash-alt"></i> Delete</a>
+                </td>
+            </form>
+        </div>
+
+    </div>
+</div>
+<!-- index bottom partial-->  
+<%- include ../partials/indexbottom_nav.ejs %>
+<!-- footer partial-->  
+<%- include ../partials/footer.ejs %>
+
