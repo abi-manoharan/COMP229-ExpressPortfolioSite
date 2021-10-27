@@ -8,6 +8,7 @@
  */
 module.exports =
 {
-    "URI": "mongodb://localhost/portfolioSite",
+    //"URI": "mongodb://localhost/portfolioSite",
+    "URI": "mongodb+srv://amanoharan:MsIY8T0OUhum8s6E@mongodbserver.5jmzb.mongodb.net/portfolioSite?retryWrites=true&w=majority",
     "Secret":"SomeSecret"
 }

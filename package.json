@@ -1,6 +1,6 @@
 {
   "name": "express-portfolio-site",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "start": "node server.js"
@@ -38,5 +38,17 @@
     "@types/passport": "^1.0.7",
     "@types/passport-local": "^1.0.34",
     "@types/passport-local-mongoose": "^6.1.0"
-  }
+  },
+  "description": "express portfolio site with db functionality",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abi-manoharan/COMP229-ExpressPortfolioSite.git"
+  },
+  "author": "Abishekh Manoharan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abi-manoharan/COMP229-ExpressPortfolioSite/issues"
+  },
+  "homepage": "https://github.com/abi-manoharan/COMP229-ExpressPortfolioSite#readme"
 }
